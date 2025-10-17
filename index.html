@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bingwa — Releases Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div>
+        <h1 class="greeting">Good evening <span class="moon">🌙</span>, <strong>Bingwa</strong></h1>
+        <p class="sub">Releases dashboard — demo data</p>
+      </div>
+      <div class="header-cards">
+        <div class="small-card">
+          <div class="eye">👁️</div>
+          <div class="val">Ksh <span class="dots">•••</span></div>
+          <div class="label">Airtime</div>
+        </div>
+        <div class="small-card">
+          <div class="eye">👁️</div>
+          <div class="val">Ksh <span class="dots">•••</span></div>
+          <div class="label">Est. Commission</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls-row">
+      <div class="left">
+        <button class="filter-btn">All (85)</button>
+      </div>
+      <div class="right">
+        <input id="search" placeholder="Filter releases or tags..." />
+      </div>
+    </section>
+
+    <section class="status-badges" id="statusBadges">
+      <!-- badges injected here -->
+    </section>
+
+    <section id="releasesGrid" class="releases-grid" aria-live="polite">
+      <!-- release cards injected here -->
+    </section>
+
+    <div id="status" class="status-line">Demo mode — sample releases loaded locally.</div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Made with ❤️ • Tech Blue Dashboard (demo data)</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
